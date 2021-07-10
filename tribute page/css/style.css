@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.header span{
+	font-family: 'Montserrat', sans-serif;
+	font-size:5vw;
+	text-transform:uppercase;
+	color:transparent;
+	background-image: repeating-linear-gradient(-90deg,
+    transparent 10px 0px,
+    white 40px 70px
+  );
+  -webkit-background-clip: text;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	/* background-color:#000; */
+}
+main{
+	overflow:hidden;
+}
+h3.intro-text{
+	letter-spacing:10px;
+	line-height:3.5vh;
+	font-size:14px;
+	font-weight:300;
+	text-transform:uppercase;	
+}
+.main-content{
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	color:#fff;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,0.8183474073223039) 56%);
+}
+.main-body{
+	width:50%;
+}
+.header-text{
+	font-size:18px;
+	line-height:27px;
+	padding: 0px 25%;
+}
+.img-div{
+}
+.lines{
+	position:relative;
+	height:20px;
+	width:100%;
+	background-image: repeating-linear-gradient(90deg,
+      transparent 2px 4px,
+      black 5px 6px);
+}
+#image{
+	width:30vw;
+}
+.about-content{
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	color:#fff;
+	justify-content:center;
+	background-color:#000;
+}
+.about-content h1{
+	font-size:2.5vw;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing:1.5px;
+	line-height:30px;
+}
+.about-content p{
+	font-size:18px;
+	line-height:24px;
+	padding:0px 15%;
+}
+
+/* Large screen */
+@media (max-width:992px){
+	
+}
+
+/* Medium screen */
+@media (max-width: 776px){
+	.header span{
+		font-size:7vw;
+	}
+	p{
+		font-size:16px !important;
+	}
+	.about-content h1{
+		font-size:5vw;
+	}
+	#image{
+		width:50vw;
+	}
+}
+/* Small screen */
+@media (max-width: 576px){
+	.header span{
+		font-size:7vw;
+	}
+	h3.intro-text{
+		font-size:12px;
+	}
+	p{
+		font-size:14px !important;
+	}
+	
+	#image{
+		width:60vw;
+	}
+}
+/* Xs small */
+@media (max-width: 382px){
+	h3.intro-text{
+		font-size:2.5vw;
+	}
+}
